@@ -15,6 +15,8 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(routes: {"/": (context) => WidgetTree()});
+    return MaterialApp(
+      debugShowCheckedBanner: false;
+      routes: {"/": (context) => WidgetTree()});
   }
 }
